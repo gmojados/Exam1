@@ -59,11 +59,11 @@ public class exam {
         for (int num : total) {
             sum += num;
         }
-        return sum/4;
+        return sum/4; // dividing by amount of numbers to get avg
     }
     //Q4
     public static void randomNum () {
-        int rand = (int)(Math.random() * 7);
+        int rand = (int)(Math.random() * 7); // 7 is the limit - math.random function generates random number under the limit
         System.out.println("Your random number is " + rand);
     }
     //Q5
@@ -80,7 +80,7 @@ public class exam {
     }
     //Q6
     public static int cubeVolume (int side) {
-        int vol = side * side * side;
+        int vol = side * side * side; // all sides of a cube are equal
 
         return vol;
     }
@@ -89,7 +89,7 @@ public class exam {
         int character = 0;
         for(int x =0; x < input.length(); x++) {
             char letter = Character.toLowerCase(input.charAt(x));
-            if (letter == 's') {
+            if (letter == 's') { // use of char because we're checking single charcter
                 character++;
             }
         }
@@ -100,7 +100,7 @@ public class exam {
         int left = 0;
         int right = sentence.length() -1;
         while (left < right) {
-            if (sentence.charAt(left) != sentence.charAt(right)) {
+            if (sentence.charAt(left) != sentence.charAt(right)) { // return false if characters are not equal
                 return false;
             }
             left++;
@@ -127,7 +127,6 @@ public class exam {
             System.out.println("Now serving customer number " + tix + "." + " Enjoy your trip to " + destination + "!");
 
     }
-
 
 }
 // end class
